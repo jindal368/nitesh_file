@@ -45,3 +45,24 @@ for i in range(len(partner_list[0])):
 loc=[28.9380, 77.5290]
 final_lis=min_geo(partner_list,loc)
 print(final_lis)
+
+
+#hence final list is the distance in km
+#select that distance whose have in range of 30km
+index=[]
+for i in range(len(final_lis)):
+    if final_lis[i]<30:
+        index.append(i)
+
+
+print(index)
+
+notification_bhej=[]
+for i in range(len(index)):
+    notification_bhej.append(partner_list[index[i]])
+
+
+print(notification_bhej)    
+
+
+
